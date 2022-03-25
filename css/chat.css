@@ -1,0 +1,75 @@
+.img-modal{
+  position: relative;
+  padding: 3px;
+  width: 130px;
+  height: 70px;
+}
+
+#pago {
+  width: 25%;
+  height: 50vh;
+  padding-left:  0px;
+  position: relative;
+  background: linear-gradient(to bottom, rgba(27, 177, 220, 0.2) 30%, rgba(30, 40, 46, 0.8) 125%);
+  background-size: 100% 120%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+
+#pago p {
+  background:  rgba(30, 40, 46, 0.6)50%;
+  color: #abcfeb;
+  font-weight: 700;
+  font-size: 20px;
+  border-radius: 90px; 
+}
+
+#pago .pago-info h2 {
+  text-align: center;
+  color: #1bb1dc;
+  margin-bottom: 40px;
+  font-size: 68px;
+  font-weight: 700;/*tamaño de negritas*/
+  text-decoration: underline;
+}
+
+#pago .pago-info h2 span {
+  color: #413e66;
+  text-decoration: underline;
+}
+#pago .fondo-text {  
+  text-align: center;  
+  font-weight: 700;/*tamaño de negritas*/   
+  font-size: 20px;
+  word-spacing: 10px;
+}
+
+#pago .mb-5,
+.my-5 {
+  padding: 25px;
+  padding-bottom: 44px;
+}
+
+
+#pago .pago-info .btn-get-started,
+#pago .pago-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase; /*Convierte las letras a mayusculas*/
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 17px 4px 17px 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1bb1dc;
+}
+
+#pago .pago-info .btn-get-started:hover,
+#pago .pago-info .btn-services:hover {
+  background: #0a98c0;
+}

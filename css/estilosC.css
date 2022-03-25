@@ -1,0 +1,356 @@
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+
+/*------------------------------
+  13. Quote area
+--------------------------------*/
+
+.suscribe-area {
+    background: #1bb1dc none repeat scroll 0 0;
+    padding: 30px 0;
+}
+
+.suscribe-text {
+    display: block;
+    padding: 10px 0;
+}
+
+.suscribe-text h3 {
+    color: #fff;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------*/
+
+/*  14.Contact Area
+/*--------------------------------*/
+
+.single-icon i {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #444;
+    line-height: 46px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.single-icon p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.contact-icon {
+    margin-bottom: 40px;
+}
+
+#google-map {
+    height: 370px;
+    margin-bottom: 20px;
+}
+
+/* FORMULARIO =================================== */
+
+.form_wrap {
+    width: 90%;
+    height: 530px;
+    margin: 50px auto;
+    display: flex;
+
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informacion de Contacto*/
+
+.cantact_info::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #1bb1dc;
+    opacity: 0.9;
+}
+
+.cantact_info {
+    width: 38%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.info_title,
+.info_items {
+    position: relative;
+    z-index: 2;
+    color: #004b9c;
+}
+
+.info_title {
+    margin-bottom: 60px;
+}
+
+.info_title span {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info_title h2 {
+    font-size: 35px;
+    text-align: center;
+}
+
+.info_items p {
+    display: flex;
+    align-items: center;
+
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.info_items p:nth-child(1) span {
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.info_items p:nth-child(2) span {
+    font-size: 50px;
+    margin-right: 15px;
+    margin-left: 4px;
+}
+
+
+/* Formulario de contacto*/
+form.form_contact {
+    width: 62%;
+    padding: 30px 40px;
+}
+
+form.form_contact h2 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+form.form_contact .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+form.form_contact label {
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea {
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #1bb1dc;
+
+    font-family: 'Montserrat';
+    color: #5A5A5A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form.form_contact textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="submit"] {
+    width: 180px;
+    background: #1bb1dc;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form.form_contact input[type="submit"]:hover {
+    background: #004b9c;
+}
+
+/* MENSAJE EXITOSO*/
+
+.mensaje-exito {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mensaje-exito h1 {
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje-exito a {
+    display: block;
+    padding: 10px 30px;
+    background: #1bb1dc;
+    text-decoration: none;
+    color: #fff;
+}
+
+.mensaje-exito a:hover {
+    background: #004b9c;
+}
+
+
+
+
+
+/* Normal desktop :992px. */
+
+@media (min-width: 992px) and (max-width: 1169px) {
+    .slider-content {
+        padding: 146px 0;
+    }
+}
+
+/* Tablet desktop :768px. */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .suscribe-text h3 {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .map-column {
+        margin-left: 0;
+        padding-right: 40px;
+    }
+
+    .contact-form {
+        margin-top: 0px;
+    }
+}
+
+/* small mobile :320px. */
+
+@media (max-width: 767px) {
+    .slider-area {
+        margin-top: 60px;
+    }
+
+    .slider-content h2 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    .slider-content h1 {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+
+    .section-headline h2 {
+        font-size: 30px;
+    }
+
+    .section-headline h3 {
+        font-size: 25px;
+    }
+
+    .contact-form {
+        margin-top: 30px;
+    }
+}
+
+/* Large Mobile :480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .submitbtn {
+        float: none;
+        width: 99.8%;
+    }
+
+    .icons-bottom ul li a {
+        height: 40px;
+        line-height: 37px;
+        width: 40px;
+    }
+
+}
+
+@media (max-width: 375px) {
+    .form_wrap {
+        width: 100%;
+        height: 310px;
+        margin: 50px auto;
+        display: flex;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .info_title h2 {
+        font-size: 16px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+
+    /* Formulario de contacto*/
+    form.form_contact {
+        width: 60%;
+        padding: 10px 10px;
+    }
+
+    form.form_contact h2 {
+        font-size: 6px;
+    }
+
+    form.form_contact input,
+    form.form_contact textarea {
+        width: 85%;
+        padding: 0;
+        margin-bottom: 5px;
+        border-bottom: 2px solid #1bb1dc;
+        font-size: 12px;
+    }
+
+    form.form_contact input[type="submit"] {
+        width: 100px;
+        padding: 10px;
+        border-radius: 25px;
+        font-size: 12px;
+    }
+
+}

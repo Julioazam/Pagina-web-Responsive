@@ -1,0 +1,481 @@
+
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: #047291;
+}
+body {
+  background: #fff;
+  color: #444;
+  font-family: "Montserrat", sans-serif;
+  height: 100%;
+}
+
+ul ,li{
+  text-decoration: none;
+  display: block;
+  
+}
+
+a {
+  color: #047291;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #fff;/*047291*/
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+
+}
+
+/* Back to top button */
+
+.back-to-top {
+  position: fixed;
+  display: none;
+  background: #1bb1dc;
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 1;
+  font-size: 16px;
+  border-radius: 50%;
+  right: 15px;
+  bottom: 15px;
+  transition: background 0.5s;
+  z-index: 11;
+}
+
+.back-to-top i {
+  padding-top: 12px;
+  color: #fff;
+}
+
+/* Prelaoder */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #f2f2f2;
+  border-top: 6px solid #1bb1dc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/*--------------------------------------------------------------
+# Top Bar Iconos de Redes Sociales
+--------------------------------------------------------------*/
+
+/*-----Clases para barra de redes sociales-----*/
+
+/*
+#topbar {
+  font-size: 25px;
+  transition: all 0.5s;
+  padding: 0px 5px
+}
+
+#topbar .social-links {
+  text-align: right;  /*Posiciona a la dereca los iconos*
+}
+
+#topbar .social-links a {
+  padding: 1px 13px;
+  display: inline-block; /*muestra los elementos de la lista horizontalmente*
+  line-height: normal;
+}
+.twitter-color:hover{
+  background: rgb(0,172,238); /*00acee *
+  border-radius: 7px;
+  color: #fff; /*5ac7e6*
+  padding: 5px;
+}
+.facebook-color:hover{
+  background:  rgb(59,89,152); /*#3b5998*
+    color: #fff; /*5ac7e6*
+  border-radius: 5px;
+  padding:8px;
+}
+.linkedin-color:hover{
+  background: rgb(14, 118,168);/*0e76a8 *
+  border-radius: 7px;
+  color: #fff; /*5ac7e6*
+  padding: 5px;
+}
+.instagram-color:hover{
+  background: rgb( 138, 58, 185);/*fbad50  1bb1dc *
+  border-radius: 7px;
+  color: #fff; /*5ac7e6*
+  padding: 5px;
+}
+
+
+#topbar .social-links a:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);   
+}
+*/
+
+
+/*-------------------------
+-------------Scrollbar------**/
+
+.scroll::-webkit-scrollbar {
+  width: 15px;
+  background: #047291;
+}
+.scroll::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 20px 2px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #d1dbde;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.scroll::-webkit-scrollbar-thumb:active {
+    background-color: #b3b3b9;
+}
+
+/*--------------------------------------------------------------
+# Header nav
+--------------------------------------------------------------*/
+#header {
+  padding: 0px 5px;
+  height: 90px;
+  transition: all 0.9s;
+  z-index: 99;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 31);
+  
+}
+
+#header.header-scrolled,/*Efecto cuando se desliza el nav*/
+#header.header-pages {
+  height: 95px;
+  padding: 6px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(108, 110, 115, .9); /*Sombra del nav blanco*/
+}
+
+#header.header-scrolled #topbar,
+#header.header-pages #topbar {
+  display: none;
+}
+
+#header .logo img {
+  width:200px;
+  height: 95px;
+}
+
+#header .logo img:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  transition: all 0.9s;
+}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+
+/* Desktop Navigation */
+
+
+.main-nav,
+.main-nav * {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.main-nav > ul > li {
+  position: relative;
+  white-space: nowrap;/*Las convierte en mayusculas*/
+  float: left;
+  padding: 20px 7px 0px 0px ;
+
+}
+
+.main-nav a {  
+  text-decoration: none;
+  display: block;
+  position: relative;
+  color: #413e66;
+  padding: 8px;
+  transition: 0.9s;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.main-nav a:hover,
+.main-nav  > a,
+.main-nav li:hover > a {
+  color: #0d98bf;
+  text-decoration: none;
+  border-radius: 5px 10px;
+  /*box-shadow: 8px 0px 20px 0px rgba(67, 69, 69, .4);*/
+   -webkit-transform: scale(.8);
+  transform: scale(.9);
+  transition: all 3s;
+}
+
+.main-nav .drop-down ul {
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: calc(250% - 5px);
+  z-index: 997;
+  opacity: 0;
+  visibility: hidden;
+  padding: 0px;
+  background: #fff;  
+  transition: ease all 0.5s;
+  border-radius: 15px 15px;
+  box-shadow: 5px 10px 20px 0px rgba(67, 69, 69, .5);
+
+}
+
+.main-nav .drop-down:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+
+.main-nav .drop-down li {
+  min-width: 180px;
+  position: relative;
+}
+
+.main-nav .drop-down ul a {
+  padding: 10px 10px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  color: #065e77;
+  margin: 10px;
+}
+
+/*Efecto de nav de desplegable*/
+.main-nav .drop-down ul a:hover,
+.main-nav .drop-down ul .active > a,
+.main-nav .drop-down ul li:hover > a {
+  color: #fff;
+  background:  rgba(0, 75, 156, 0.8);
+  border-radius: 7px;
+  transition: all 0.5s;
+
+}
+
+
+.main-nav .drop-down > a:after {
+  font-family: "Montserrat", sans-serif;
+  padding-left: 10px;
+}
+
+.main-nav .drop-down .drop-down ul {
+  top: 0;
+  left: calc(100% - 30px);
+}
+
+.main-nav .drop-down .drop-down:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+}
+
+.main-nav .drop-down .drop-down > a {
+  padding-right: 35px;
+}
+
+.main-nav .drop-down .drop-down > a:after {
+  /*content: "\f105";*/
+  position: absolute;
+  right: 15px;
+}
+
+
+
+
+/* Mobile Navigation -----------
+-------------------------------*/
+
+.mobile-nav {
+  position: fixed;
+  top: 5px;
+  bottom: 0;
+  z-index: 9999;
+  overflow-y: auto; 
+  left: -260px;
+  width: 260px;
+  padding-top: 18px;
+  background: rgba(40, 38, 70, 0.8);
+  transition: 0.4s;
+}
+
+.mobile-nav * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.mobile-nav a {
+  display: block;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+
+.mobile-nav a:hover,
+.mobile-nav .active > a,
+.mobile-nav li:hover > a {
+  color: #8dc2fa;
+  text-decoration: none;
+}
+
+.mobile-nav .drop-down > a:after {
+  /*content: "\f078";*/
+  font-family: FontAwesome;
+  padding-left: 10px;
+  position: absolute;
+  right: 15px;
+}
+
+.mobile-nav .active.drop-down > a:after {
+  content: "\f077";
+}
+
+.mobile-nav .drop-down > a {
+  padding-right: 35px;
+}
+
+.mobile-nav .drop-down ul {
+  display: none;
+  overflow: hidden;
+}
+
+.mobile-nav .drop-down li {
+  padding-left: 20px;
+}
+
+.mobile-nav-toggle {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 9998;
+  border: 0;
+  background: none;
+  font-size: 24px;
+  transition: all 0.4s;
+  outline: none !important;
+  line-height: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.mobile-nav-toggle i {
+  margin: 18px 18px 0 0;
+  color: #065e77;
+}
+
+.mobile-nav-overly {
+  width: 100%;
+  height: 100%;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background: rgba(40, 38, 70, 0.8);
+  overflow: hidden;
+  display: none;
+}
+
+.mobile-nav-active {
+  overflow: hidden;
+}
+
+.mobile-nav-active .mobile-nav {
+  left: 0;
+}
+
+.mobile-nav-active .mobile-nav-toggle i {
+  color: #fff;
+}

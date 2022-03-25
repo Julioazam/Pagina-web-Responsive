@@ -1,0 +1,134 @@
+
+/* Call To Action Section
+--------------------------------*/
+#call-to-action {
+  background: #004B9c;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
+  color: #fff;
+}
+
+#call-to-action .cta-btn {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 3px solid #fff;
+  color: #fff;
+}
+
+#call-to-action .cta-btn:hover {
+  background: #1bb1dc;
+  border: 30px solid #1bb1dc;
+}
+
+/* Services Section
+--------------------------------*/
+.img-servicios{
+  border-radius: 40px;
+  padding: 30px;
+  position: relative;
+  width: 450px;
+  height: 300px;
+}
+
+#services {
+  padding: 30px 0 0 0;
+}
+
+#services .box {
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.4s ease-in-out;
+  /*padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: #fff;
+  transition: 0.4s;*/
+}
+
+#services .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+}
+#services .box .icon {
+  float: left;
+}
+#services .box .icon i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+#services .box .icon i:before {
+  background: #0c2e8a;
+  background: linear-gradient(45deg, #50d8af 0%, #a3ebd5 100%);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#services .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#services .box h4{
+  color: #444;
+}
+
+
+#services .box a:hover {
+  color: #413e66;
+}
+
+#services .box ul {
+  font-size: 14px;
+  margin-top: 30px;
+  margin-left: 60px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+#services .box ul p{
+  font-size: 14px;
+  margin-top: 20px;
+  margin-left: -50px;
+  margin-bottom: 0;
+  line-height: 24px;
+}
+
+ .description p {
+    font-size: 14px;
+
+    margin-bottom: 0;
+    line-height: 24px;
+    text-align: justify;
+    font-weight: 500;
+}
+/*--------------------------------------------------------------
+# Responsive Media Queries
+--------------------------------------------------------------*/
